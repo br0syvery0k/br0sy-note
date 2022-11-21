@@ -1,0 +1,667 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-width: 500px;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(32, 125, 255, 0.5) 0%, rgba(0, 189, 85, 0.5) 100%);
+    background-attachment: fixed;
+}
+
+/*----------------------------------导航栏的CSS--------------------------------------------*/
+.navigation {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.yunzhiSys {
+    font-size: 30px;
+    color: #adadad;
+    margin-right: 20px;
+    margin-top: 2px !important;
+}
+
+.navigation div {
+    margin-left: 16px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.navigation div:hover {
+    background-color: #666;
+}
+
+.navigation div a:active {
+    color: white;
+}
+
+.navigation div a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 23px;
+    position: relative;
+    top: 10px;
+}
+
+/* 用来被前端请求 */
+.active {
+    color: white !important;
+}
+
+.navigation div img {
+    height: 23px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 13px;
+}
+
+/*----------------------------------啥也不是--------------------------------------------*/
+header {
+    /* background-color: white; */
+    height: 70px;
+}
+
+/*----------------------------------左侧数据的CSS--------------------------------------------*/
+
+.static {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.add {
+    width: 250px;
+    display: inline-block;
+}
+
+.pCenter {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 360px;
+}
+
+.pCenter span {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.quit {
+    font-size: 15px;
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+.head {
+    /* 这里的头像，以后可以做一个截取，取一张图片的一部分当头像 */
+    border: solid;
+    display: block;
+    width: 230px;
+    height: 260px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#personalCenterPng {
+    height: 23px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 7px;
+    margin-left: 13px;
+}
+
+.mood {
+    display: inline-block;
+    width: 100%;
+    /*background-color: orange;*/
+    text-align: center;
+}
+
+/*----------------------------------personalCenter的CSS--------------------------------------------*/
+.content {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    width: 800px;
+    border-radius: 5px;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+    left: 500px;
+}
+
+.pcImgAndWords {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.pcImgAndWords span {
+    font-weight: 700;
+}
+
+.pcImgAndWords img {
+    height: 21px;
+    border-radius: 5px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+
+.exMsg {
+    margin-top: 15px;
+}
+
+.content form {
+    margin-left: calc(50% - 175px);
+}
+
+.content input:nth-of-type(1) {
+    width: 100px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: solid #aaaaaa;
+}
+
+.content input:nth-of-type(1):focus {
+    border-color: black;
+    transform: scale(1.07);
+}
+
+.content textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    resize: none;
+    border-radius: 5px;
+    text-indent: 3px;
+    outline: none;
+    border: solid #aaaaaa;
+}
+
+.content textarea:focus {
+    border-color: black;
+    transform: scale(1.03);
+}
+
+.headImg {
+    margin-top: 20px;
+    /*color: transparent;*/
+}
+
+.content span:nth-of-type(2) {
+    position: relative;
+    top: -35px;
+}
+
+#exButton {
+    display: block;
+    margin-top: 35px;
+    width: 200px;
+    height: 40px;
+    margin-left: calc(50% - 100px);
+    border: none;
+    font-weight: 700;
+    background-color: limegreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#exButton:hover {
+    transform: scale(1.02);
+}
+
+#exButton:active {
+    transform: scale(1);
+}
+
+#Info1 {
+    font-size: 15px;
+    color: red;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+
+.exMsg span {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+/*--------------------------ManagePage 的 CSS----------------------------------*/
+.content_managerPage {
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    left: 500px;
+    width: 800px;
+}
+
+.managePng {
+    height: 23px;
+    border-radius: 5px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+
+.List1 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.List1 > span {
+    font-weight: 700;
+}
+
+.addList {
+    margin-left: 550px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: limegreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addList:active {
+    transform: scale(1.02);
+}
+
+.ListTable {
+    margin: 20px auto;
+    border-spacing: 0;
+}
+
+.ListTable tr:nth-of-type(1) {
+    font-weight: 700;
+}
+
+.ListTable tr:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+.ListTable tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ListTable tr td:nth-of-type(1) {
+    padding-left: 10px;
+    width: 250px;
+}
+
+.ListTable tr td:nth-of-type(2) {
+    padding-left: 10px;
+    width: 250px;
+}
+
+.ListTable tr td:nth-of-type(3) {
+    padding-left: 10px;
+    width: 250px;
+}
+
+.ListTable tr td button:nth-of-type(1) {
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ListTable tr td button:nth-of-type(2) {
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: indianred;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ListTable tr td button:active {
+    transform: scale(1.03);
+}
+
+/* ------------------------------------------弹出框------------------------------------------ */
+/* 遮罩层 */
+.shade {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    /* 这里一定要把遮罩层移到重叠元素的上层，就可以造成父窗口无法操作的效果 */
+    z-index: 10;
+}
+
+/* 模态框 */
+.ex-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(10, 20, 20, .2), -5px -5px 10px rgba(10, 20, 20, .2);
+    background-color: #fff;
+    /* 和遮罩层同理，模态框一定要在最上层 */
+    z-index: 10;
+}
+
+.ex-box-header {
+    font-size: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.ex-box-body {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.ex-box-body div {
+    margin-bottom: 3px;
+}
+
+.ex-box-body input {
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 430px;
+    border: solid;
+    border-color: #aaa;
+    text-indent: 3px;
+}
+
+.ex-box-body input:active {
+    transform: scale(1.02);
+    border-color: #666;
+}
+
+.ex-box-body input:focus {
+    border-color: #666;
+}
+
+.ex-box-msg {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    top: 145px;
+    left: 140px;
+}
+
+.ex-box-footer {
+    padding-left: 330px;
+    padding-top: 25px;
+}
+
+.exit,
+.exchange {
+    width: 55px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exit {
+    background-color: dodgerblue;
+}
+
+.exchange {
+    background-color: limegreen;
+}
+
+.exit:active,
+.exchange:active {
+    transform: scale(1.03);
+}
+/*--------------删除模态框的css-------------*/
+.de-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 400px;
+    height: 150px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(10, 20, 20, .2), -5px -5px 10px rgba(10, 20, 20, .2);
+    background-color: #fff;
+    /* 和遮罩层同理，模态框一定要在最上层 */
+    z-index: 10;
+}
+
+.yesBtn,
+.cancelBtn{
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.de-box-body {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.yesBtn {
+    margin-right: 50px;
+}
+
+.de-box-btn {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.yesBtn:active,
+.cancelBtn:active {
+    transform: scale(1.03);
+}
+
+/*----------------------------发表云记的 CSS------------------------------------*/
+.content_postPage,
+.content_mainPage {
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    left: 500px;
+    width: 800px;
+}
+
+.postPage_header,
+.mainPage_header {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.postPage_header img,
+.mainPage_header img {
+    height: 23px;
+    border-radius: 5px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+
+.postPage_header span,
+#postPage_Form div span,
+.mainPage_header {
+    font-weight: 700;
+}
+
+#postPage_Form div input {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    text-indent: 10px;
+    border: none #aaa;
+    border-bottom-style: solid;
+}
+
+#postPage_Form div input:focus {
+    border-color: black;
+}
+
+.postPage_form_1,
+.postPage_form_2 {
+    margin-left: calc(50% - 170px);
+    margin-top: 20px;
+}
+
+.okBtn {
+    margin-left: calc(50% - 25px);
+    width: 70px;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.okBtn:active {
+    transform: scale(1.03);
+}
+
+.postPage_form_3 {
+    width: 750px;
+    padding-left: 50px;
+}
+/*--------------主页的 css -----------------*/
+
+.yunjiList {
+    margin: 10px auto;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.yunjiList_title {
+    font-weight: 700;
+}
+
+.yunjiList_title td {
+    height: 50px;
+}
+
+.yunjiList tr td:nth-of-type(1) {
+    width: 100px;
+}
+
+.yunjiList tr td:nth-of-type(2),
+.yunjiList tr td:nth-of-type(3),
+.yunjiList tr td:nth-of-type(4) {
+    padding-left: 10px;
+    width: 210px;
+}
+
+/*------------------导航栏------------------*/
+
+.pageNum a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 27px;
+}
+
+.pageNum {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.current {
+    background-color: limegreen;
+    border: none;
+}
+
+/* ----------------查看云记的 CSS--------------- */
+.checkNote_exbtn {
+    margin-left: calc(50% + 100px);
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkNote_delbtn {
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: indianred;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkNote_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.checkNote_content {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.checkNote_backbtn {
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: limegreen;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,96 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-width: 500px;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(32, 125, 255, 0.5) 0%, rgba(0, 189, 85, 0.5) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* position: relative; */
+    background-color: white;
+    width: 950px;
+    height: 550px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.img {
+    position: relative;
+    left: 20px;
+}
+
+.registerText {
+    width: 600px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerForm input {
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    height: 50px;
+    width: 300px;
+    outline: none;
+    /* 	text-indent: 10px;
+        border-bottom: solid; */
+}
+
+.registerForm select {
+    margin-bottom: 20px;
+    width: 300px;
+    outline: none;
+    height: 30px;
+}
+
+.registerForm #userName,
+.registerForm #userPwd,
+.registerForm #userMood,
+.registerForm #userNick {
+    text-indent: 10px;
+    border-bottom: solid;
+    border-color: #aaa;
+}
+
+.registerForm #userName:focus,
+.registerForm #userPwd:focus,
+.registerForm #userMood:focus,
+.registerForm #userNick:focus {
+    border-color: black;
+    font-size: 23px;
+}
+
+#registerButton {
+    margin-top: 20px;
+}
+
+#registerButton:active {
+    transform: scale(1.02);
+}
+
+#img1 {
+    border: solid;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    width: 280px;
+}
+
+#registerMsg {
+    color: red;
+    font-size: 13px;
+    display: block;
+    position: absolute;
+    bottom: 247px;
+}

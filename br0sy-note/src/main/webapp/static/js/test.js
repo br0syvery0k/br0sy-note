@@ -1,0 +1,3 @@
+function checkLogin() {
+    $(".content").submit();
+}

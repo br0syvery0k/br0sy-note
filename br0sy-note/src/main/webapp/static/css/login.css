@@ -1,0 +1,130 @@
+* {
+	font-size: 20px;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	min-width: 500px;
+	height: 100vh;
+	background-image: linear-gradient(45deg, rgba(32, 125, 255, 0.5) 0%, rgba(0, 189, 85, 0.5) 100%);
+	/* 项目在容器的中心 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	position: relative;
+	margin-top: 40px;
+	height: 600px;
+}
+
+#yunrizhi {
+	position: absolute;
+	font-size: 45px;
+	left: calc(50% - 100px);
+	top: 30px;
+	text-shadow: 3px 3px 5px black;
+}
+
+.content {
+	display: inline-block;
+	width: 320px;
+	/* 这里的160px是上面width的一半 */
+	margin-left: calc(50% - 160px); 
+	margin-top: 160px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#login {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-weight: 550;
+}
+
+#inputUser {
+	position: relative;
+}
+
+#inputUser input {
+	height: 40px;
+	padding-left: 40px;
+	width: 290px;
+	border-style: solid;
+	border-color: #aaa;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	/* 取消输入框选中时的边框 */
+	outline: none;
+	
+}
+
+#userImg,
+#pwdImg{
+	width: 35px;
+	position: absolute;
+	z-index: 1;
+	left: 20px;
+}
+
+#userImg {
+	top: 53px;
+}
+
+#pwdImg {
+	top: 103px;
+}
+
+#Remember {
+	position: relative;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	left: 200px;
+}
+
+#Remember #RM {
+	position: absolute;
+	top: 4px;
+	left: 20px;
+	font-size: 15px;
+}
+
+#Remember #Message {
+	position: absolute;
+	color: red;
+	font-size: 12px;
+	left: -160px;
+	top: 6px;
+}
+
+#btn {
+	margin-bottom: 25px;
+}
+
+#loginBtn,
+#registerBtn {
+	width: 100px;
+	height: 35px;
+	margin-left: 38px;
+	border-radius: 17.5px;
+	outline: none;
+	border-style: solid;
+	border-color: #aaa;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+#loginBtn:hover,
+#registerBtn:hover {
+	background-color: #ddd;
+}
+
+#loginBtn:active,
+#registerBtn:active {
+	background-color: #ddd;
+}

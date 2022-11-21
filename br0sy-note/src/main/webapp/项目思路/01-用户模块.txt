@@ -1,0 +1,45 @@
+用户模块
+    通过用户行为来区分（actionName）
+        用户登录（actionName = "login"）
+        进入个人中心（actionName = "userCenter"）
+        加载头像（actionName = "userHead"）
+        验证昵称的唯一性（actionName = "checkNick"）
+        修改用户信息（actionName = "updateUser"）
+        用户退出（actionName = "logout"）
+    在UserServlet的service方法中
+        1、获取用户行为
+            String actionName = request.getParameter("actionName");
+        2、判断用户行为，调用对应的方法
+            if ("login".equals(actionName)) {
+                // 用户登录
+            } else if ("userCenter").equals(actionName) {
+                // 进入个人中心
+            } ...
+一、用户登录
+    ==================前端实现==================
+        1、添加表单，设置表单属性
+        2、设置表单元素的name属性值，修改id属性值（首字母改小写）
+        3、创建 formCheck.js 文件，添加了按钮点击事件绑定的函数 checkLogin()
+    ==================后端实现==================
+        1、获取参数（用户名、密码）
+        2、参数的非空校验
+            如果为空：重新跳转到登录页面
+        3、先查用户名，如果用户对象为空，那就重新跳转到登录页面，判断用户名的密码是否正确，如果失败，那么还是重新跳转到登录页面
+        4、将用户信息存到session作用域中，判断用户是否记住密码
+            如果是，将用户名和密码存到cookie中，设置失效时间，并相应给客户端
+            否则清除原有的cookie
+            重定向跳转到index页面
+
+    分层思想：
+        Web层（控制层：接收参数，响应页面）
+            像前端
+        Service层（业务逻辑层：参数判断、业务逻辑处理）
+            像后端
+        Dao层（数据访问层：数据库中的增删改查）
+            像数据库端
+
+
+个人中心：
+    用户修改昵称的校验：
+        方案一：给按钮校验，按钮按下后传到后端校验
+        方案二：利用前端的Ajax技术进行更高级的校验（禁用按钮等操作）

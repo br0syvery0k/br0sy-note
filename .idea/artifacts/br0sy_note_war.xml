@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="br0sy-note:war">
+    <output-path>$PROJECT_DIR$/br0sy-note/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>br0sy-note</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="br0sy-note.war">
+      <element id="artifact" artifact-name="br0sy-note:war exploded" />
+    </root>
+  </artifact>
+</component>

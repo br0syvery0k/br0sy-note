@@ -1,0 +1,9 @@
+# 连接MySQL数据库的配置文件 等号前后不要写空格
+# 驱动名
+jdbcName=com.mysql.cj.jdbc.Driver
+# 数据库连接
+dbUrl=jdbc:jdbc:mysql://localhost:3306/br0sy_note?userUnicode=true&characterEncoding=utf8&useSSL=true
+# 数据库连接账号
+dbName=root
+# 数据库连接密码
+dbPwd=root
